@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@drawable/sky_cloud_whitebg"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_weight="1"
+                  android:layout_height="0dp">
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <ImageView
+                android:id="@+id/red_girl"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/red_cute_girl"
+                android:layout_marginLeft="10dp"
+                />
+        <TextView
+                android:id="@+id/grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:text="grade"
+                android:layout_toRightOf="@+id/red_girl"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ff707070"
+                android:background="@drawable/sentence_rect"
+                android:layout_marginRight="10dp"
+                />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_weight="1"
+                  android:layout_height="0dp">
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:id="@+id/blue_boy"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/blue_boy"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"/>
+        <TextView
+                android:id="@+id/stage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/right_sentence"
+                android:text="stage"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff707070"
+                android:layout_alignTop="@+id/blue_boy"
+                android:layout_toLeftOf="@+id/blue_boy"/>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_weight="1"
+                  android:layout_height="0dp">
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:background="#ffffffff"
+                  android:layout_height="150dp">
+        <Button android:layout_width="0dp"
+                android:layout_weight="6"
+                android:id="@+id/restart"
+                android:layout_gravity="center"
+                android:text="restart"
+                android:textColor="#ff707070"
+                android:background="@drawable/button_blue_five_whitebg"
+                android:textSize="20dp"
+                android:layout_height="match_parent"/>
+        <Button android:layout_width="0dp"
+                android:id="@+id/exit"
+                android:layout_gravity="center"
+                android:background="@drawable/button_blue_no"
+                android:text="exit"
+                android:textColor="#ff707070"
+                android:layout_weight="6"
+                android:textSize="20dp"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_weight="1"
+                  android:layout_height="0dp">
+    </LinearLayout>
+</LinearLayout>
